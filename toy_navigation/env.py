@@ -1,7 +1,7 @@
 import torch
 from tensordict import TensorDict
 from torchrl.data import UnboundedContinuous, Bounded, Composite, Categorical, OneHot
-from torchrl.envs import Compose, ObservationNorm, StepCounter, TransformedEnv, DoubleToFloat
+from torchrl.envs import Compose, StepCounter, TransformedEnv
 from torchrl.envs import EnvBase
 from torchrl.envs.utils import check_env_specs
 

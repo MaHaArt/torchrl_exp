@@ -3,14 +3,13 @@ import random
 import networkx as nx
 import torch
 from tensordict import TensorDict
-from torch_geometric.data import Data
+from torch_geometric.data import Data, Batch
 from torchrl.collectors import SyncDataCollector
 from torchrl.data import NonTensor
 from torchrl.data import UnboundedContinuous, Bounded, Composite, Categorical
 from torchrl.envs import Compose, StepCounter, TransformedEnv, DoubleToFloat
 from torchrl.envs import EnvBase
 from torchrl.envs.utils import check_env_specs
-from torch_geometric.data import Data, Batch
 
 
 class SampleGraph():

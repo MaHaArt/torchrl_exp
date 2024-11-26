@@ -1,12 +1,13 @@
 import torch
 import torch.nn.functional as F
 from tensordict import TensorDict
-from tensordict.nn import TensorDictModule, CompositeDistribution, InteractionType, NormalParamExtractor
+from tensordict.nn import TensorDictModule, CompositeDistribution, InteractionType
 from torch import nn
 from torch.distributions import Categorical, Normal
 from torchrl.modules import ProbabilisticActor, ValueOperator
 from torchrl.objectives import ClipPPOLoss
 from torchrl.objectives.value import GAE
+
 from toy_navigation.env import action_spec
 
 

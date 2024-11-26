@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+import matplotlib.pyplot as plt
 import torch
 from torchrl.collectors import SyncDataCollector
 from torchrl.envs.utils import ExplorationType, set_exploration_type
@@ -7,8 +9,6 @@ from tqdm import tqdm
 from toy_navigation.env import make_toy_env
 from toy_navigation.modules import get_actor, get_critic, get_advantage, get_loss_module
 
-import matplotlib.pyplot as plt
-import torch.nn.functional as F
 
 def do_train(silent=True, device=None, **kwargs):
     """
